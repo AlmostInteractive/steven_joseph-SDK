@@ -1,8 +1,5 @@
-// API keys used for testing:
-//  nSUkx5YlLsdj_qulm-W2
-//  6uILiEDoJNxQS45vAk5p
-
-const SDK = new TheOneApiSdk('6uILiEDoJNxQS45vAk5p');
+const apiKey = document.getElementById('apiKey').text.trim();
+const SDK = new TheOneApiSdk(apiKey);
 
 function prettyPrint(data) {
   return JSON.stringify(data, null, 2);
