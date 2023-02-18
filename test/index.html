@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The One Api SDK Tests</title>
+    <script type="module" defer>
+      import TheOneApiSdk from '../index.js';
+      window.TheOneApiSdk = TheOneApiSdk;
+    </script>
+    <script type="text/javascript" src="test.js" defer></script>
+
+    <style>
+        fieldset {
+            font-size: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            max-height: 300px;
+            max-width: 95%;
+        }
+
+        legend {
+            font-size: 12px;
+            color: darkblue;
+        }
+
+        mark {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="RunAllTests()">Run All Tests</button>
+<br><br>
+
+<fieldset><legend>getAllMovies()</legend><div id="getAllMovies1">
+    <button onclick="DoTest(getAllMovies1, 'getAllMovies1')">Run Test</button>
+</div></fieldset>
+
+<fieldset><legend>getAllMovies(callback)</legend><div id="getAllMovies2">
+    <button onclick="DoTest(getAllMovies2, 'getAllMovies2')">Run Test</button>
+</div></fieldset>
+
+
+<fieldset><legend>getMovie()</legend><div id="getMovie1">
+    <button onclick="DoTest(getMovie1, 'getMovie1')">Run Test</button>
+</div></fieldset>
+
+<fieldset><legend>getMovie(id)</legend><div id="getMovie2">
+    <button onclick="DoTest(getMovie2, 'getMovie2')">Run Test</button>
+</div></fieldset>
+
+<fieldset><legend>getMovie(id, callback)</legend><div id="getMovie3">
+    <button onclick="DoTest(getMovie3, 'getMovie3')">Run Test</button>
+</div></fieldset>
+
+
+<fieldset><legend>getMovieQuotes()</legend><div id="getMovieQuotes1">
+    <button onclick="DoTest(getMovieQuotes1, 'getMovieQuotes1')">Run Test</button>
+</div></fieldset>
+
+<fieldset><legend>getMovieQuotes(id)</legend><div id="getMovieQuotes2">
+    <button onclick="DoTest(getMovieQuotes2, 'getMovieQuotes2')">Run Test</button>
+</div></fieldset>
+
+<fieldset><legend>getMovieQuotes(id, callback)</legend><div id="getMovieQuotes3">
+    <button onclick="DoTest(getMovieQuotes3, 'getMovieQuotes3')">Run Test</button>
+</div></fieldset>
+
+
+</body>
+</html>
