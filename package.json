@@ -1,0 +1,27 @@
+{
+  "name": "steven_joseph-the_one_api_sdk",
+  "version": "1.0.1",
+  "description": "An SDK for https://the-one-api.dev/",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "concurrently \"http-server -a localhost -p 1234\" \"start http://localhost:1234/test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlmostInteractive/StevenJoseph-SDK.git"
+  },
+  "keywords": [],
+  "author": "Steven Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlmostInteractive/StevenJoseph-SDK/issues"
+  },
+  "homepage": "https://github.com/AlmostInteractive/StevenJoseph-SDK#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1"
+  }
+}
