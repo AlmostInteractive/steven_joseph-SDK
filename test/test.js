@@ -1,4 +1,4 @@
-const apiKey = document.getElementById('apiKey').text.trim();
+const apiKey = document.getElementById('apiKey').value.trim();
 const SDK = new TheOneApiSdk(apiKey);
 
 function prettyPrint(data) {
