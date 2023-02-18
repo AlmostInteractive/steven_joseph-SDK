@@ -17,7 +17,7 @@
  */
 class TheOneApiSdk {
   constructor(token) {
-    this._sdk = SDK(token);
+    this._sdk = SdkHelper(token);
   }
 
   /**
@@ -56,7 +56,7 @@ class TheOneApiSdk {
 
 }
 
-function SDK(token) {
+function SdkHelper(token) {
   // ----- Private Variables --------------------
   const _apiUrlRoot = 'https://the-one-api.dev/v2';
 
@@ -129,4 +129,4 @@ function SDK(token) {
   };
 }
 
-module.exports = TheOneApiSdk;
+export default TheOneApiSdk;
