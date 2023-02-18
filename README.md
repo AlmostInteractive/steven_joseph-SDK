@@ -4,9 +4,25 @@ An SDK for https://the-one-api.dev/
 
 Works on all browsers except Internet Explorer and Opera Mini (due to dependency on javascript `fetch`).
 
+## Installation
+`npm install steven_joseph-the_one_api_sdk`
+
 ## Usage:
+#### HTML
+```html
+<script type="module">
+      import TheOneApiSdk from './node_modules/steven_joseph-the_one_api_sdk/index.js';
+      window.TheOneApiSdk = TheOneApiSdk;
+</script>
+<script type="text/javascript">
+    const SDK = new TheOneApiSdk(apiKey);
+    const data = SDK.getAllMovies();
+</script>
 ```
-const SDK = TheOneApiSdk(myToken);
+#### Node.js
+```js
+const TheOneApiSdk = require('steven_joseph-the_one_api_sdk');
+const SDK = new TheOneApiSdk(apiKey);
 const data = SDK.getAllMovies();
 ```
 
@@ -21,7 +37,7 @@ Request one specific movie
 #### async getMovieQuotes(id, (callback))
 Request all movie quotes for one specific movie (only working for the LotR trilogy)
 
-## Data Formats:
+## Return Data Formats:
 All successful results are in the form:
 ```json
 {
